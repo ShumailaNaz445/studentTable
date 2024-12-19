@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="body">
+    <h1>Table</h1>
+    
+    <div class="heading">
+        <input type="text" placeholder="Search here..." id="searchInput" onchange="findName()">
+
+       
+        <select id="classFilter" onchange="filterClass()">
+            <option value="1">Class 1</option>
+            <option value="2">Class 2</option>
+            <option value="3">Class 3</option>
+            <option value="4">Class 4</option>
+            <option value="5">Class 5</option>
+            <option value="6">Class 6</option>
+        </select>
+    </div>
+        
+       <hr>
+        
+        <table id="dataTable">
+    <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+    </thead>
+    <tbody id="body">
+        
+    </tbody>
+</table>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
